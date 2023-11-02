@@ -96,7 +96,7 @@ class Agent extends CI_Controller
             $query = $this->db->get_where('agent', ['id' => $id]);
             if ($query->num_rows() == 1) {
                 $this->db->where('id', $id)->update('agent', $data);
-                $message = ['class' => 'success my-3', 'message' => 'Agent updated successfully!'];
+                $message = ['class' => 'success my-3', 'message' => 'Agent updated successfullyy!'];
                 $this->session->set_flashdata('flash', $message);
                 redirect(base_url('admin/agent/'));
             } else {
